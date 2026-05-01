@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily-News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="theme-toggle" id="themeToggle">
+        <span id="themeIcon">🌙</span>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>Daily News</h1>
+            <p>Stay inform with the latest news frome around the world</p>
+        </div>
+    </div>
+    <div class="search-categories">
+        <input type="text" class="search-box" placeholder="search news" id="searchInput">
+        <div class="categories">
+            <button class="categories-btn" data-category = "general" id="active">
+                General
+            </button>
+            <button class="categories-btn" data-category = "business">
+                Business
+            </button>
+            <button class="categories-btn" data-category = "entertainment">
+                Entertaiment
+            </button>
+            <button class="categories-btn" data-category = "health">
+                Health
+            </button>
+            <button class="categories-btn" data-category = "science">
+                Science
+            </button>
+            <button class="categories-btn" data-category = "sports">
+                Sports
+            </button>
+            <button class="categories-btn" data-category = "technology">
+                Technology
+            </button>
+        </div>
+        <div class="newsGrid" id="newsGrid">
+            <div class="newsGrid"></div>
+            <div class="newsGrid"></div>
+            <div class="newsGrid"></div>
+        </div>
+        <div class="loading" id="loading" style="display:none">
+        </div>
+        <div class="error" id="error" style="display: none;"></div>
+        <div class="end-message" id="endMessage" style="display: none;">
+            🎉 you've reached the end!
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html
