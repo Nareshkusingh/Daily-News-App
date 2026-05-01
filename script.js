@@ -2,7 +2,7 @@ class NewsApp {
     constructor() {
          this.API_KEY = "c40bf4127e09416094fdfd4fa901be3b";
         // this.BASE_URL = "https://newsapi.org/v2";
-        this.BASE_URL = "https";
+        this.BASE_URL = "https://gnews.io/api/v4";
         this.state = {
             category: "general",
             page: 1,
@@ -150,7 +150,8 @@ class NewsApp {
             params.append("q", this.state.query);
         }
 
-        return `${this.BASE_URL}/top-headlines?${params}`;
+        // return `${this.BASE_URL}/top-headlines?${params}`;
+        const url = `${this.BASE_URL}/top-headlines?country=us&max=10&token=${this.API_KEY}`;
     }
 
     renderNews(articles, append = false) {
