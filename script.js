@@ -2,7 +2,7 @@ class NewsApp {
     constructor() {
          this.API_KEY = "c40bf4127e09416094fdfd4fa901be3b";
         // this.BASE_URL = "https://newsapi.org/v2";
-        this.BASE_URL = `${this.BASE_URL}/top-headlines?country=us&max=10&token=${this.API_KEY}`;
+        this.BASE_URL = "https";
         this.state = {
             category: "general",
             page: 1,
