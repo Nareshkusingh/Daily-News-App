@@ -38,28 +38,7 @@ class NewsApp {
             document.getElementById('themeIcon').textContent=newTheme=== "dark"?
         "☀️":"🌙";
         }
-    }
-
-//     setupTheme() {
-//     const theme = localStorage.getItem("theme") || "light";
-//     document.documentElement.setAttribute('data-theme', theme);
-
-//     document.getElementById('themeIcon').textContent =
-//         theme === "dark" ? "☀️" : "🌙";
-
-//     document.getElementById("themeToggle").onclick = () => {
-//         const current = document.documentElement.getAttribute("data-theme");
-
-//         // ✅ YE LINE MISSING THI
-//         const newTheme = current === "dark" ? "light" : "dark";
-
-//         document.documentElement.setAttribute('data-theme', newTheme);
-//         localStorage.setItem('theme', newTheme);
-
-//         document.getElementById('themeIcon').textContent =
-//             newTheme === "dark" ? "☀️" : "🌙";
-//     }
-// }
+    }  
 
     setupEvents() {
         document.querySelectorAll(".categories-btn").forEach(btn => {
